@@ -50,7 +50,7 @@
 			.animate-typing {
 				display: inline-block;
 				width: 0;
-				animation: typing 3s steps(40, end) infinite;
+				animation: typing 7s steps(40, end) infinite;
 			}
 		</style>
 	</head>
@@ -120,20 +120,21 @@
 				<img
 					src="c1-assets/cat-big.png"
 					alt="Cute cat"
-					class="relative object-contain mt-[150px] md:-mt-20 md:w-full"
+					class="relative object-contain mt-[170px] md:-mt-20 md:w-full"
 				/>
 
 				<!-- Text Overlay -->
-				<div class="absolute md:pl-10 overflow-hidden whitespace-nowrap animate-typing">
+				<div
+					class="absolute md:pl-10 overflow-hidden whitespace-nowrap animate-typing"
+				>
 					<h1 class="text-3xl pl-2 pt-5 adlam md:text-5xl md:leading-tight">
 						Pamper Your Pet, <br />
 						Because They Deserve <br />
 						the Best
 					</h1>
-					<p class="mt-4 pl-2 pr-10 sora leading-6">
-						Discover a world of treats, toys, and essentials handpicked <br> for your
-						furry friends.
-						Shop now and make tails wag with joy!
+					<p class="m-2 sora leading-6">
+						Discover a world of treats, toys, and essentials handpicked <br />
+						for your furry friends. Shop now and make tails wag with joy!
 					</p>
 					<button
 						class="mt-6 ml-2 bg-yellow-400 px-6 py-3 rounded-lg font-semibold"
@@ -144,7 +145,108 @@
 			</div>
 		</header>
 
-		<main></main>
+		<main>
+			<!--Category-->
+			<section class="ml-3 mr-3 mt-10 md:pl-20 md:pr-20">
+				<h2 class="adlam text-3xl mb-10">Browse By Category</h2>
+				<div
+					class="grid grid-cols-2 md:grid md:grid-cols-6 justify-center items-center text-center gap-6"
+				>
+					<div
+						class="bg-[#F9DF8A] py-7 px-3 flex flex-col justify-center items-center rounded-lg leading-6"
+					>
+						<div
+							class="rounded-full bg-white w-28 h-28 flex flex-col justify-center items-center"
+						>
+							<img class="" src="c1-assets/dog-cartoon.png" alt="" />
+						</div>
+
+						<h3 class="adlam mt-4">Dog</h3>
+						<p class="sora mt-3">3 Items</p>
+					</div>
+                    <div
+						class="bg-[#F9DF8A] py-7 px-3 flex flex-col justify-center items-center rounded-lg leading-6"
+					>
+						<div
+							class="rounded-full bg-white w-28 h-28 flex flex-col justify-center items-center"
+						>
+							<img class="" src="c1-assets/fish-cartoon.png" alt="" />
+						</div>
+
+						<h3 class="adlam mt-4">Dog</h3>
+						<p class="sora mt-3">3 Items</p>
+					</div>
+                    <div
+						class="bg-[#F9DF8A] py-7 px-3 flex flex-col justify-center items-center rounded-lg leading-6"
+					>
+						<div
+							class="rounded-full bg-white w-28 h-28 flex flex-col justify-center items-center"
+						>
+							<img class="" src="c1-assets/cat-cartoon.png" alt="" />
+						</div>
+
+						<h3 class="adlam mt-4">Dog</h3>
+						<p class="sora mt-3">3 Items</p>
+					</div>
+                    <div
+						class="bg-[#F9DF8A] py-7 px-3 flex flex-col justify-center items-center rounded-lg leading-6"
+					>
+						<div
+							class="rounded-full bg-white w-28 h-28 flex flex-col justify-center items-center"
+						>
+							<img class="" src="c1-assets/bird-cartoon.png" alt="" />
+						</div>
+
+						<h3 class="adlam mt-4">Dog</h3>
+						<p class="sora mt-3">3 Items</p>
+					</div>
+                    <div
+						class="bg-[#F9DF8A] py-7 px-3 flex flex-col justify-center items-center rounded-lg leading-6"
+					>
+						<div
+							class="rounded-full bg-white w-28 h-28 flex flex-col justify-center items-center"
+						>
+							<img class="" src="c1-assets/mouse-cartoon.png" alt="" />
+						</div>
+
+						<h3 class="adlam mt-4">Dog</h3>
+						<p class="sora mt-3">3 Items</p>
+					</div>
+                    <div
+						class="bg-[#F9DF8A] py-7 px-3 flex flex-col justify-center items-center rounded-lg leading-6"
+					>
+						<div
+							class="rounded-full bg-white w-28 h-28 flex flex-col justify-center items-center"
+						>
+							<img class="" src="c1-assets/rabbit-cartoon.png" alt="" />
+						</div>
+
+						<h3 class="adlam mt-4">Dog</h3>
+						<p class="sora mt-3">3 Items</p>
+					</div>
+				</div>
+                
+			</section>
+
+            <!--pet product-->
+
+            <section class="bg-[#FFF9F4]  mt-20">
+                <h2 class="pl-20 pt-20 adlam text-3xl">Trending Pet Products</h2>
+                <div>
+                    <div class="bg=[#FFF9F4]">
+                        <h2>T- Shirt For Dogs</h2>
+                        <p>Discover a world of treats toys ,and essentials  handpicked for</p>
+                        <button>Shop Now</button>
+                        <div>
+                            <img src="c1-assets/cute-pet-small.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </section>
+		</main>
 		<footer></footer>
 	</body>
 </html>
