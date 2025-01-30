@@ -36,13 +36,29 @@
 			.adlam {
 				font-family: "ADLaM Display", serif;
 			}
+			@keyframes typing {
+				0% {
+					width: 0;
+				}
+				50% {
+					width: 100%;
+				}
+				100% {
+					width: 0;
+				}
+			}
+			.animate-typing {
+				display: inline-block;
+				width: 0;
+				animation: typing 3s steps(40, end) infinite;
+			}
 		</style>
 	</head>
 	<body>
 		<!--header-->
 		<header>
 			<nav
-				class="flex justify-between items-center sora bg-[#FFF9F4] pl-20 pr-20 pt-3 pb-3 border md:border-0 border-black border-b-1"
+				class="flex justify-between items-center sora bg-[#FFF9F4] pl-5 md:pl-20 md:pr-20 pt-3 pb-3 border md:border-0 border-black border-b-1"
 			>
 				<!--left-->
 				<div class="flex items-center gap-3">
@@ -99,33 +115,31 @@
 			</nav>
 
 			<!--hero sec-->
-			<div class="container mx-auto px-20">
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-					<!-- Text Section -->
-					<div>
-						<h1 class="adlam text-5xl font-bold text-gray-900">
-							Pamper Your Pet, <br />
-							Because They Deserve the Best
-						</h1>
-						<p class="mt-4 text-gray-600">
-							Discover a world of treats, toys, and essentials handpicked for
-							your furry friends. Shop now and make tails wag with joy!
-						</p>
-						<button
-							class="mt-6 bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition"
-						>
-							Find a pet
-						</button>
-					</div>
+			<div class="relative flex md:p-20">
+				<!-- Background Image -->
+				<img
+					src="c1-assets/cat-big.png"
+					alt="Cute cat"
+					class="relative object-contain mt-[150px] md:-mt-20 md:w-full"
+				/>
 
-					<!-- Image Section -->
-					<div class="flex justify-center">
-						<img
-							src="c1-assets/cat-big.png"
-							alt="Cute cat"
-							class="max-w-full h-auto"
-						/>
-					</div>
+				<!-- Text Overlay -->
+				<div class="absolute md:pl-10 overflow-hidden whitespace-nowrap animate-typing">
+					<h1 class="text-3xl pl-2 pt-5 adlam md:text-5xl md:leading-tight">
+						Pamper Your Pet, <br />
+						Because They Deserve <br />
+						the Best
+					</h1>
+					<p class="mt-4 pl-2 pr-10 sora leading-6">
+						Discover a world of treats, toys, and essentials handpicked <br> for your
+						furry friends.
+						Shop now and make tails wag with joy!
+					</p>
+					<button
+						class="mt-6 ml-2 bg-yellow-400 px-6 py-3 rounded-lg font-semibold"
+					>
+						Find a pet
+					</button>
 				</div>
 			</div>
 		</header>
